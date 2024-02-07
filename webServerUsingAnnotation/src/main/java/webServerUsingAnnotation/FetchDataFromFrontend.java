@@ -23,7 +23,7 @@ public class FetchDataFromFrontend extends GenericServlet {
 		String dept = req.getParameter("dept");
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/college", "root", "12345@Shahil");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/college", "root", "root");
 			PreparedStatement ps = con.prepareStatement("insert into student(id,name,age,dept) values(?,?,?,?)");
 			ps.setInt(1, Integer.parseInt(id));
 			ps.setString(2, name);
