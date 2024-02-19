@@ -19,8 +19,8 @@ public class SaveCookiesInBrowser extends HttpServlet {
 		Cookie cookie2 = new Cookie("email", "ask@gmail.com");
 		cookie2.setMaxAge(600);
 		Cookie cookie3 = new Cookie("password", "12345");
-		cookie3.setMaxAge(6000);/* setMaxAge() is used to set the cookies expire time*/
-		resp.addCookie(cookie1);  /* addCookie() is used to save cookies in the browser*/
+		cookie3.setMaxAge(6000);/* setMaxAge() is used to set the cookies expire time */
+		resp.addCookie(cookie1); /* addCookie() is used to save cookies in the browser */
 		resp.addCookie(cookie2);
 		resp.addCookie(cookie3);
 		PrintWriter pout = resp.getWriter();
